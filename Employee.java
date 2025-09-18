@@ -40,19 +40,32 @@ public class Employee{
         //      output canDrive
         //3 set age to less than 16
         //      output CanNotDrive 
-    }
+        if (age >= 16){
+            System.out.println("Can drive");
+            return true;
+        }else{
+            System.out.println("You need to wait"+ " " + (16 - age) + " ");
+            return false;
+            
+            
+            
+        }
+            
+            
+            
+    
+        } 
+    
+    
 
     /*
      * Returns the net pay for the outstanding unpaid hours
      */
     private double calculatePay(){
         // to be completed
-        //1 Set hourly wage to 10
-        //2 set unpaid hours to 10 
-        //3 get total salary
-        //4 set tax 30%
-        //5 Get net pay
-        //6 Set unpaidhours to 0
+        double deductions = 0.70;
+        double netPay = (unpaidHours * hourlyWage) - deductions;
+        return netPay;
         
     
     
@@ -64,5 +77,11 @@ public class Employee{
     public void paySalary(){
         // to be completed
         // 1 set 6 
+        double netpay = calculatePay();
+        System.out.println( fullname + " " + "has received a wire 
+        transfer of" + " " + netPay );
+    
+        unpaidHours = 0; 
+        
     }
 }
