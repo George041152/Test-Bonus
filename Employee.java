@@ -17,6 +17,9 @@ public class Employee{
         this.hourlyWage = hourlyWage;
         onLeave = false;
         unpaidHours = 0.0;
+        
+        //Get int yearOfBirth;
+        //Set boolean onLeave
     }
     
     /**
@@ -32,6 +35,11 @@ public class Employee{
     public boolean canDrive(){
         int age = calculateAge(2025);
         // to be completed
+        //1 Get employee age
+        //2 set age greater than or equal to 16
+        //      output canDrive
+        //3 set age to less than 16
+        //      output CanNotDrive 
     }
 
     /*
@@ -39,6 +47,15 @@ public class Employee{
      */
     private double calculatePay(){
         // to be completed
+        //1 Set hourly wage to 10
+        //2 set unpaid hours to 10 
+        //3 get total salary
+        //4 set tax 30%
+        //5 Get net pay
+        //6 Set unpaidhours to 0
+        
+    
+    
     }
 
     /*
@@ -46,5 +63,6 @@ public class Employee{
      */
     public void paySalary(){
         // to be completed
+        // 1 set 6 
     }
 }
